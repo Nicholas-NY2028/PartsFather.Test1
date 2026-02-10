@@ -28,8 +28,6 @@ jobs:
     - name: Repair Project Structure
       run: |
         flutter create . --project-name=mobile_app
-        # Restore our custom native code if it was overwritten, though create usually respects existing files.
-        # But since we only have partial files, this will fill in the gaps (gradle, plist, xcodeproj).
 
     - name: Get Dependencies
       run: flutter pub get
